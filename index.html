@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra Lourdes Ambre</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share:wght@400;700&family=Tangerine:wght@400;700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+</head>
+<body>
+
+    <div id="overlay_js" onclick="functionHoverAAndOverlay()"></div>
+
+    <header class="header" id="header">
+
+        <div class="div_header" id="div_header" >
+
+            <a href="index.html" class="a_img_header_logo"><img src="assets/MARCA D AGUA PRETO.png" alt="Foto da Marca d'agua" class="img_header_marca"></a>
+
+            <button class="button_menu" onclick="hideElementBmMenu()">
+                <span class="material-symbols-outlined" id="icon_menu">
+                    menu
+                    </span>
+            </button>
+
+            <div class="div_text_menu" id="div_text_menu_pc">
+
+                <a href="#img_profesional_div_2_pc" class="a_menu_hamburguer_pc">Início</a>
+                <a href="#text_div_1_line_2" class="a_menu_hamburguer_pc">Sobre</a>
+                <a href="#div_3" class="a_menu_hamburguer_pc">Clientes</a>
+                <a href="#div_4" class="a_menu_hamburguer_pc">Clínicas</a>
+                <a href="#div_5" class="a_menu_hamburguer_pc">Contato</a>
+
+            </div>
+
+            <div class="div_2_social_media" id="div_2_social_media_pc"> 
+
+                <a class="a_menu_hamburguer_pc" href="https://www.instagram.com/dralourdesambre?igsh=MWc4eDQyYzZscWludQ=="><img src="assets/INSTA ICON FIGMA-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+                <a class="a_menu_hamburguer_pc" href="https://www.facebook.com/lourdesambre"><img src="assets/FACE ICON FIGMA-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+                <a class="a_menu_hamburguer_pc"href="https://wa.me/552141064987"><img src="assets/ZAP ICON FIGMA BLACK-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+
+            </div>
+
+        </div>
+       
+    </header>
+    
+
+    <div class="menu_hamburguer" id="divFunctionHamburguer">
+       
+        <div class="div_text_menu">
+
+            <div class="div_menu_logo_button">
+
+                <img src="assets/MARCA D AGUA PRETO.png" alt="Foto da Marca d'agua" class="img_header_marca" id="img_header_marca_menu_hamburguer">
+
+                <button class="button_close_menu" id="buttonCloseMenuJs" onclick="hideElementBmMenu()">
+                    <span class="material-symbols-outlined" id="icon_close_menu">
+                    close
+                    </span>
+                </button>
+
+            </div>
+                
+            <hr class="line_menu_hamburguer">
+
+            <a href="#div_1" class="a_menu_hamburguer" onclick="functionHoverAAndOverlay() "><p class="text_menu_hamburguer">Início</p></a>
+            <a href="#text_div_1_line_2" class="a_menu_hamburguer" onclick="functionHoverAAndOverlay() "><p class="text_menu_hamburguer">Sobre</p></a>
+            <a href="#div_3" class="a_menu_hamburguer" onclick="functionHoverAAndOverlay() "><p class="text_menu_hamburguer">Clientes</p></a>
+            <a href="#div_4" class="a_menu_hamburguer" onclick="functionHoverAAndOverlay() "><p class="text_menu_hamburguer">Clínicas</p></a>
+            <a href="#div_5" class="a_menu_hamburguer" onclick="functionHoverAAndOverlay() "><p class="text_menu_hamburguer">Contato</p></a>
+
+        </div>
+
+    </div> 
+
+
+    
+    <main class="main">
+
+        <a class="icon_wpp_fixed" href="https://wa.me/552141064987"><img src="assets/whatsapp1.png" id="icon_wpp_fixed" alt="" class="icon_fixed_wpp"></a>
+
+
+        <div class="div_1_2_button_column_pc">   <!-- to align the button in the center, 
+                                                that is, with 1 div + button, then aligned. -->
+
+            <div class="div_organization_all_pc">  <!-- join them all into one, so that
+                                                     in sequence, you can align the button -->
+            
+                <div class="div_organization_1_2_row_to_pc">  <!-- need to place some items in
+                                                              "row", which in mobile form are
+                                                               in "column" -->
+
+                    <div class="div_1_organization_hide_expand_more">
+
+                        <div class="div_1" id="div_1">
+
+                            <h1 class="title_div_1">Invisalign</h1>
+                            <p class="text_div_1">O aparelho ortodôntico</p>
+                            <p class="text_div_1" id="text_div_1_line_2">mais avançado do mundo</p>
+                            <button class="button_div_1_pc" onclick="hideElementEmPc()">Saber mais</button>
+                            <button class="button_div_1" onclick="hideElementEm()">Saber mais</button>
+                            <button class="button_js_div_1" id="ShowElement" onclick="hideElementEm()">
+                                <span class="material-symbols-outlined" id="show_more_icon">
+                                expand_more
+                                </span>
+                            </button>
+
+                        </div>
+                        
+                        <div class="js_expand_more" id="forFunctionEm">
+
+                            <!-- <button id="buttonHideJs" onclick="hideElementEm()">
+                                <span class="material-symbols-outlined" id="icon_button_hide_em_6" >
+                                    expand_less
+                                    </span>
+                            </button> -->
+
+                            <div class="div_1_em_1" id="em_1">
+
+                                <div class="div_organization_em">
+
+                                    <h2 class="title_em">Imperceptível</h2>
+                                    <p class="text_em" id="text_imperceptible">Alinhadores Invisalign são virtualmente invíveis.</p>
+
+                                </div>
+
+                                <img src ="assets/Imperceptivel MOBILE.png" alt="">
+
+                            </div>
+
+                            <div class="div_1_em_2" id="em_2">
+
+                                <img src="assets/removivel MOBILE.png" alt="">  
+
+                                <div class="div_organization_em_2">
+
+                                    <h2 class="title_em">Removível</h2>
+                                    <p class="text_em" id="text_removable">Feitos com material flexível SmartTrack ®            
+                                    tornando-se super fácil de colocar 
+                                    e remover.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="div_1_em_1" id="em_3">
+
+                                <div class="div_organization_em">
+
+                                    <h2 class="title_em">Confortável</h2>
+                                    <p class="text_em" id="text_comfortable">Cada movimento dos seus 
+                                        dentes durante o tratamento será gradual, suave e eficaz.</p>
+
+                                </div>  
+
+                                <img src="assets/Confortavel MOBILE.png" alt="">     
+
+                            </div>
+
+                            <div class="div_1_em_2" id="em_4">
+
+                                <img src="assets/Practice MOBILE.png" alt="">   
+
+                                <div class="div_organization_em_2">
+
+                                    <h2 class="title_em" id="title_practical">Prático</h2>
+                                    <p class="text_em" id="text_practical">Como os alinhadores 
+                                        Invisalign são removíveis, você poderá usar o fio 
+                                        dental e escovar os dentes normalmente.</p>
+
+                                </div>  
+
+                            </div>
+
+                            <div class="div_1_em_1" id="em_5">
+
+                                <div class="div_organization_em">
+
+                                    <h2 class="title_em">Ágil</h2>
+                                    <p class="text_em" id="text_agile">Você começará a ver os primeiros resultados em
+                                    poucas semanas.</p>
+
+                                </div>
+
+                                <img src="assets/Agil MOBILE.png" alt="">    
+
+                            </div>
+
+                            <div class="div_1_em_2" id="em_6">
+
+                                <img src="assets/Previsible MOBILE.png" alt="">   
+
+                                <div class="div_organization_em_2">
+
+                                    <h2 class="title_em" id="title_previsible">Previsível</h2>
+                                    <p class="text_em" id="text_previsible">Você poderá
+                                         acompanhar todas as etapas do tratamento e 
+                                         visualizá-las de forma mais clara.</p>
+
+                                </div>
+
+                            </div>
+
+                            <button id="buttonHideJs" onclick="hideElementEm()">
+                                <span class="material-symbols-outlined" id="icon_button_hide_em_6" >
+                                    expand_less
+                                    </span>
+                            </button>
+
+                        </div>
+
+                    </div>   
+
+                </div> <!-- need to place -->
+            
+
+                <img src="assets/IMG_6914.jpg" alt="" alt="Foto da dentista" class="img_profesional_div_2" id="img_profesional_div_2_pc">
+
+
+
+
+
+
+
+
+
+
+
+                <div class="div_2" id="div2">
+
+                    <div class="div_2_organization">
+
+                        <img src="assets/IMG_6914.jpg" alt="Foto da dentista" class="img_profesional_div_2" id="img_profesional_div_2_mobile">
+                        
+                        <div class="div_2_about">
+                            
+                            <div class="div_2_organization_social_media">
+
+                                <h1 class="title_div_2">Lourdes Ambre</h1>
+                                <div class="div_2_social_media" id="div_2_social_media_mobile"> 
+
+                                    <a class="a_div_2_rede_social" href="https://www.instagram.com/dralourdesambre?igsh=MWc4eDQyYzZscWludQ=="><img src="assets/INSTA ICON FIGMA-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+                                    <a class="a_div_2_rede_social" href="https://www.facebook.com/lourdesambre"><img src="assets/FACE ICON FIGMA-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+                                    <a class="a_div_2_rede_social" href="https://wa.me/552141064987"><img src="assets/ZAP ICON FIGMA BLACK-02.png" alt="Foto da rede social" class="img_div_2_social_media"></a>
+
+                                </div>
+
+                            </div>
+                            
+                            <p class="text_div_2">Ortodontia - Invisalign</p>
+                            <a class="a_button_div_2" href="https://wa.me/552141064987"><button class="button_div_2" id="button_div_2_mobile">Agendar consulta</button></a>
+                            <a class="a_button_div_2" href="https://wa.me/552141064987"><button class="button_div_2" id="button_div_2_pc">AGENDAR CONSULTA</button></a>
+
+                        </div>
+
+                    </div>
+
+                </div>    
+
+            </div>  <!-- join them all  -->
+
+            <button class="button_js_div_all_pc" id="ShowElementPc" onclick="hideElementEmPc()">
+                <span class="material-symbols-outlined" id="show_more_icon_pc">
+                expand_more
+                </span>
+            </button>   
+
+            <div class="js_expand_more_pc" id="forFunctionEmPc">
+
+                <!-- <button id="buttonHideJs" onclick="hideElementEm()">
+                    <span class="material-symbols-outlined" id="icon_button_hide_em_6" >
+                        expand_less
+                        </span>
+                </button> -->
+
+                <div class="div_1_em_1" id="em_1">
+
+                    <div class="div_organization_em">
+
+                        <h2 class="title_em">Imperceptível</h2>
+                        <p class="text_em" id="text_imperceptible">Alinhadores Invisalign são virtualmente invíveis.</p>
+
+                    </div>
+
+                    <img src ="assets/Imperceptivel PC.png" alt="" class="img_em_pc">
+
+                </div>
+
+                <div class="div_1_em_2" id="em_2">
+
+                    <img src="assets/removivel PC.png" alt="" class="img_em_pc">  
+
+                    <div class="div_organization_em_2">
+
+                        <h2 class="title_em">Removível</h2>
+                        <p class="text_em" id="text_removable">Feitos com material flexível SmartTrack ®            
+                        tornando-se super fácil de colocar 
+                        e remover.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="div_1_em_1" id="em_3">
+
+                    <div class="div_organization_em">
+
+                        <h2 class="title_em">Confortável</h2>
+                        <p class="text_em" id="text_comfortable">Cada movimento dos seus 
+                            dentes durante o tratamento será gradual, suave e eficaz.</p>
+
+                    </div>  
+
+                    <img src="assets/Confortavel PC.png" alt="" class="img_em_pc">     
+
+                </div>
+
+                <div class="div_1_em_2" id="em_4">
+
+                    <img src="assets/Practice PC.png" alt="" class="img_em_pc">   
+
+                    <div class="div_organization_em_2">
+
+                        <h2 class="title_em" id="title_practical">Prático</h2>
+                        <p class="text_em" id="text_practical">Como os alinhadores 
+                            Invisalign são removíveis, você poderá usar o fio 
+                            dental e escovar os dentes normalmente.</p>
+
+                    </div>  
+
+                </div>
+
+                <div class="div_1_em_1" id="em_5">
+
+                    <div class="div_organization_em">
+
+                        <h2 class="title_em">Ágil</h2>
+                        <p class="text_em" id="text_agile">Você começará a ver os primeiros resultados em
+                        poucas semanas.</p>
+
+                    </div>
+
+                    <img src="assets/Agil PC.png" alt="" class="img_em_pc">    
+
+                </div>
+
+                <div class="div_1_em_2" id="em_6">
+
+                    <img src="assets/Previsivel PC.png" alt="" class="img_em_pc">   
+
+                    <div class="div_organization_em_2">
+
+                        <h2 class="title_em" id="title_previsible">Previsível</h2>
+                        <p class="text_em" id="text_previsible">Você poderá
+                             acompanhar todas as etapas do tratamento e 
+                             visualizá-las de forma mais clara.</p>
+
+                    </div>
+
+                </div>
+
+                <button id="buttonHideJs" onclick="hideElementEmPc()">
+                    <span class="material-symbols-outlined" id="icon_button_hide_em_6" >
+                        expand_less
+                        </span>
+                </button>
+
+            </div>
+
+        </div>   <!-- to align the button in the center. -->
+
+
+
+
+
+
+
+
+
+
+        <div class="div_2_about_doctor" id="divAboutDoctor">
+
+            <div class="div_organization_AD_pc">
+
+                <img src="assets/LOURDES TRANSPARENT.png" alt="" class="img_doctor_div_2_AD" id="img_doctor_div_2_AD_pc">
+
+                <div class="div_organization_all_AD_info_pc">
+
+                    <h2 class="title_2_about_d">Sobre mim</h2>
+                    <p class="text_2_about_d">
+                        Sou dentista formada há 32 anos, atualmente trabalhando com o
+                        sistema de Alinhadores Invisíveis da Invisalign. Meu foco é o 
+                        tratamento humanizado, buscando sempre trazer para o paciente 
+                        seu sorriso mais lindo.
+                    </p>
+
+                    <img src="assets/LOURDES TRANSPARENT.png" alt="" class="img_doctor_div_2_AD" id="img_doctor_div_2_AD_mobile">
+
+                    <div class="div_2_organization_list_AD">
+
+                        <h2 class="subtitle_2_about_d">Experiência em</h2>                
+
+                        <div class="experience_list_div_2">
+
+                            <div class="div_item_experience">
+
+                                <span class="material-symbols-outlined" id=done_icon_div_2>
+                                    done
+                                </span>
+                                <p class="text_item_experience">Odontologia Hospitalar</p>
+
+                            </div>
+
+                            <div class="div_item_experience">
+
+                                <span class="material-symbols-outlined" id=done_icon_div_2>
+                                    done
+                                </span>
+                                <p class="text_item_experience">Ortodontia</p>
+
+                            </div>
+
+                            <div class="div_item_experience">
+
+                                <span class="material-symbols-outlined" id=done_icon_div_2>
+                                    done
+                                </span>
+                                <p class="text_item_experience">Saúde pública</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>  
+
+                </div>
+
+            </div>
+
+        </div>    
+       
+
+
+
+
+
+
+
+
+
+
+        <div class="div_3" id="div_3">
+
+            <h1 class="title_div_3">Clientes</h1>
+            <h2 class="text_div_3">Confira o feedback dos nossos clientes</h2>
+
+            <div class="div_3_all_costumers">
+                
+                <div class="div_3_costumers" id="div_3_costumers_pc_start">
+
+                    <div class="div_3_costumers_info"  id="div_3_costumers_info_pc">
+
+                        <p class="title_costumers">Alexander Lopes</p>
+                        <img src="assets/PESSOA 1 1.png" alt="Foto da pessoa que avaliou" class="imgs_div_3">
+
+                    </div>
+
+                    <div class="div_3_costumers_info" >    
+
+                        <div class="div_3_costumers_stars">
+
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">                        </div>
+
+                            <p class="text_costumers">“Me senti muito seguro com 
+                                todos os procedimentos
+                                de higiene adotados.”</p>
+
+                        </div>
+
+                    </div>
+
+                <div class="div_3_costumers" id="div_3_costumers_pc_end">
+
+                    <div class="div_3_costumers_info"  id="div_3_costumers_info_pc">
+
+                        <p class="title_costumers">Roberta Cataldo</p>
+                        <img src="assets/womanimg.png" alt="Foto da pessoa que avaliou" class="imgs_div_3">
+
+                    </div>
+
+                    <div class="div_3_costumers_info">    
+
+                        <div class="div_3_costumers_stars">
+
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+
+                        </div>
+
+                        <p class="text_costumers">“Encantou toda a família com seu 
+                            atendimento.”</p>
+
+                    </div>
+
+                </div>
+
+                <div class="div_3_costumers" id="div_3_costumers_pc_start">
+
+                    <div class="div_3_costumers_info" id="div_3_costumers_info_pc_JE">
+
+                        <p class="title_costumers">João Emílio</p>
+                        <img src="assets/manje.png" alt="Foto da pessoa que avaliou" class="imgs_div_3">
+
+                    </div>
+
+                    <div class="div_3_costumers_info">    
+
+                        <div class="div_3_costumers_stars">
+
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+                            <img src="assets/Star 4.png" class="img_star_div_3" alt="Star filled icon">
+
+                        </div>
+
+                        <p class="text_costumers" id="text_JE">“Estou fazendo
+                            clareamento com a Dra. Lourdes e estou muito 
+                            feliz com o resultado! Ela é demais!”</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="div_4" id="div_4">
+
+            <h1 class="title_div_4">Clínicas</h1>
+            <h2 class="subtitle_div_4">Conheça nossas clínicas</h2>
+
+            <div class="all_carousel_div_4">
+
+                <div class="div_4_carousel" id="div4Carousel">
+
+                    <img src="assets/lou-computador.jpg" alt="Foto" class="img_carousel_2_div_4">
+                    <img src="assets/IMG_6916 (1).jpg" alt="Foto" class="img_carousel_1_div_4" id="img_carousel_1_div_4_pc">
+                    <img src="assets/IMG_6916.jpg" alt="Foto" class="img_carousel_1_div_4" id="img_carousel_1_div_4_mobile">
+                    <img src="assets/IMG_6943.jpg" alt="Foto" class="img_carousel_3_div_4">
+                    <img src="assets/lou-itero-2.jpg" alt="Foto" class="img_carousel_3_div_4">
+                    <img src="assets/IMG_6934.jpg" alt="Foto" class="img_carousel_3_div_4">
+
+                </div>
+                
+                <button class="button_carousel_4" onclick="nextButtonDiv4()">
+                    <span class="material-symbols-outlined" id="arrow_4_icon">
+                        arrow_forward_ios
+                        </span>
+               
+            </div>
+
+            <div class="div_4_organization_infos_and_maps">
+
+                <div class="div_4_all_infos">
+
+                    <p class="subtitle_div_4_infos">Tijuca</p>
+
+                    <div class="div_4_infos">
+
+                        <span class="material-symbols-outlined" id="icon_infos">
+                            location_on
+                            </span>
+                            <p class="text_infos" id="local">R. Eng. Enaldo Cravo Peixoto, Número 105 - sala 604 
+                                Tijuca, Rio de Janeiro - RJ, 20540-106</p>
+
+                    </div>
+
+                    <div class="div_4_infos">
+
+                        <span class="material-symbols-outlined" id="icon_infos">
+                            directions_car
+                            </span>
+                        <p class="text_infos" id="car">Estacionamento para Clientes
+                            em frente ao Shopping Tijuca</p>
+
+                    </div>
+
+                    <div class="div_4_infos" id="div_pedestrian">
+
+                        <span class="material-symbols-outlined" id="icon_infos">
+                            directions_walk
+                        </span>
+                        <p class="text_infos" id="pedestrian">5 minutos do metrô da Saens Peña</p>
+
+                    </div>
+
+                    <div class="div_4_infos">
+
+                        <span class="material-symbols-outlined" id="icon_infos">
+                            schedule
+                        </span>
+                        <p class="text_infos" id="time">Horário de funcionamento: 
+                            Segunda: 09h as 18hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="div_4_organization_maps_and_schedule">
+
+                    <a href="https://www.google.com/maps/place/R.+Eng.+Enaldo+Cravo+Peixoto,
+                    +105+-+Tijuca,+Rio+de+Janeiro+-+RJ,+20540-106/@-22.9214634,-43.2344461,
+                    17z/data=!3m1!4b1!4m6!3m5!1s0x997e6a398741d1:0xb51217dcd9be8e42!8m2!3d-
+                    22.9214634!4d-43.2344461!16s%2Fg%2F11c43xrdvt?entry=ttu" 
+                    class="a_maps_div_4">
+                    <img src="assets/maps.png" class="maps_img_div_4" alt="Map photo">
+                    </a>
+
+                    <a class="a_button_div_2" href="https://wa.me/552141064987"><button class="button_div_4">Agendar consulta</button></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="div_5" id="div_5">
+
+            <p class="title_div_5">Contato</p>
+            <h2 class="text_div_5">Entre em conato e marque uma consulta </h2>
+
+            <div class="div_5_contact">
+                
+                <div class="div_5_contact_method" id="wpp_div_5">
+
+                    <a class="a_div_5" href="https://wa.me/552141064987">
+
+                        <img src="assets/Zap for FIGMA-01.png" class="imgs_div_5" id="img_wpp_div_5" alt="Icone do WhatsApp">
+                        <div class="a_div_5_organization">
+
+                                <p class="title_contact">WhatsApp</p>
+                                <p class="text_contact">(21) 4106-4987</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="div_5_contact_method">
+
+                    <a class="a_div_5" href="tel:+5521998960013">
+
+                        <img src="assets/cellphone.png" class="imgs_div_5" alt="Icone do telefone">
+
+                        <div class="a_div_5_organization">
+
+                            <p class="title_contact">Fale conosco</p>
+                            <p class="text_contact">(21) 99896-0013</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="div_5_contact_method" id="email_div_5">
+
+                    <a class="a_div_5" href="mailto:drlourdes@gmail.com">
+
+                        <img src="assets/Email for FIGMA-01.png" class="imgs_div_5" alt="Icone do E-mail">
+
+                        <div class="a_div_5_organization">
+                            
+                            <p class="title_contact">Envie um e-mail</p>
+                            <p class="text_contact">drlourdes@gmail.com</p>
+
+                        </div> 
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        
+        <div class="div_5_social_media">
+
+            <h2 class="title_social_media">Seu sorriso é nossa paixão!</h2>
+            <div class="div_footer_sm_and_texts">
+
+                    <a class="ahref_socialm_facebook" href="https://www.facebook.com/lourdesambre"><img src="assets/FACE ICON FIGMA-02.png" class="imgs_social_media" alt="Logo do Facebook">
+                    <a class="ahref_socialm_insta" href="https://www.instagram.com/dralourdesambre?igsh=MWc4eDQyYzZscWludQ=="><img src="assets/INSTA ICON FIGMA-02.png" class="imgs_social_media" alt="Logo do Instagram"></a>
+
+            </div>
+
+        </div>
+
+        <p class="text_footer">Copyright © 2021 por Dra. Lourdes Ambre 
+        - CRO-RJ 19864. Todos os direitos reservados.</p>
+
+    </footer>
+
+
+    <script src="main.js"></script>
+
+    
+</body>
+</html>
